@@ -53,6 +53,6 @@ int pr_bigS(va_list a, flags_t *f);
 int pr_address(va_list a, flags_t *f);
 int pr_rev(va_list a, flags_t *f);
 int pr_rot13(va_list a, flags_t *f);
-char *convert(unsigned long int n, int b, int lc);
+char *convert(unsigned long int num, int b, int lc);
 
 #endif

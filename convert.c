@@ -2,13 +2,13 @@
 
 /**
  * convert - converts numbers into strings
- * @n: number
+ * @num: number
  * @b: base
  * @lc: lowercase
  * Return: string
  */
 
-char *convert(unsigned long int n, int b, int lc)
+char *convert(unsigned long int num, int b, int lc)
 {
 	static char *x;
 	static char buffer[50];
