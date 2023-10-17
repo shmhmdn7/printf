@@ -41,7 +41,7 @@ int prnt_str(va_list a, flags_t *p);
 int prnt_char(va_list a, flags_t *p);
 int pr_percent(va_list a, flags_t *p);
 int t_flag(char sp, flags_t *f);
-int pr_int(va_list a, flags_t *f);
+int pr_int(va_list a, flags_t *p);
 void pr_num(int n);
 int _length(int i);
 int prnt_unsigned(va_list a, flags_t *f);

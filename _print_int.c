@@ -3,18 +3,18 @@
 /**
  * pr_int - prints int
  * @a: arguments
- * @f: pointer
+ * @p: pointer
  * Return: num of char printed
  */
 
-int pr_int(va_list a, flags_t *f)
+int pr_int(va_list a, flags_t *p)
 {
 	int j = va_arg(a, int);
 	int result = _length(j);
 
-	if (f->space == 1 && f->plus == 0 && j >= 0)
+	if (p->space == 1 && p->plus == 0 && j >= 0)
 		result += _write(' ');
-	if (f->plus == 1 && j >= 0)
+	if (p->plus == 1 && j >= 0)
 		result += _write('+');
 	if (j <= 0)
 		result++;
@@ -69,3 +69,4 @@ int _length(int i)
 
 	return (x);
 }
+
