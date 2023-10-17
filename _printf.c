@@ -30,7 +30,7 @@ int _printf(const char *format, ...)
 				leng += _write('%');
 				continue;
 			}
-			while (p_flag(*m, &flags))
+			while (t_flag(*m, &flags))
 				m++;
 			pr = _pr_spf(*m);
 			leng += (pr)
