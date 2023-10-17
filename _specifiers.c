@@ -10,8 +10,8 @@ int (*_pr_spf(char sp))(va_list, flags_t *)
 {
 
 	ph specifier_array[] = {
-		{'c', pr_char},
-		{'s', pr_string},
+		{'c', prnt_char},
+		{'s', prnt_str},
 		{'%', pr_percent},
 		{'d', pr_int},
 		{'i', pr_int},

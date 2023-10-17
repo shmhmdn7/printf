@@ -37,10 +37,10 @@ int _printf(const char *format, ...);
 int (*_pr_spf(char sp))(va_list, flags_t *);
 int _write(char c);
 int _write_str(char *s);
-int pr_string(va_list a, flags_t *f);
-int pr_char(va_list a, flags_t *f);
-int pr_percent(va_list a, flags_t *f);
-int t_flag(char s, flags_t *p);
+int prnt_str(va_list a, flags_t *p);
+int prnt_char(va_list a, flags_t *p);
+int pr_percent(va_list a, flags_t *p);
+int t_flag(char sp, flags_t *f);
 int pr_int(va_list a, flags_t *f);
 void pr_num(int n);
 int _length(int i);
@@ -56,3 +56,4 @@ int pr_rot13(va_list a, flags_t *f);
 char *convert(unsigned long int num, int b, int lc);
 
 #endif
+
