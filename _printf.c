@@ -27,7 +27,7 @@ int _printf(const char *format, ...)
 			m++;
 			if (*m == '%')
 			{
-				leng += _write('%');
+				leng += _prnt_char('%');
 				continue;
 			}
 			while (t_flag(*m, &flags))
@@ -38,9 +38,10 @@ int _printf(const char *format, ...)
 				: _printf("%%%c", *m);
 		}
 		else
-			leng += _write(*m);
+			leng += _prnt_char(*m);
 	}
-	_write(-1);
+	_prnt_char(-1);
 	va_end(argus);
 	return (leng);
 }
+

@@ -27,11 +27,11 @@ int pr_bigS(va_list a, flags_t *p)
 			leng += 2;
 			result = convert(s[j], 16, 0);
 			if (!result[1])
-				leng += _write('0');
+				leng += _prnt_char('0');
 			leng += _write_str(result);
 		}
 		else
-			leng += _write(s[j]);
+			leng += _prnt_char(s[j]);
 	}
 	return (leng);
 }

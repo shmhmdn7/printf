@@ -48,7 +48,7 @@ int prnt_octal(va_list a, flags_t *f)
 	int leng = 0;
 
 	if (f->hash == 1 && s[0] != '0')
-		leng += _write('0');
+		leng += _prnt_char('0');
 	leng += _write_str(s);
 
 	return (leng);

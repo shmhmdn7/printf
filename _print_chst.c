@@ -29,7 +29,7 @@ int prnt_char(va_list a, flags_t *p)
 {
 	(void)p;
 
-	_write(va_arg(a, int));
+	_prnt_char(va_arg(a, int));
 
 	return (1);
 }
@@ -46,6 +46,6 @@ int pr_percent(va_list a, flags_t *p)
 	(void)a;
 	(void)p;
 
-	return (_write('%'));
+	return (_prnt_char('%'));
 }
 

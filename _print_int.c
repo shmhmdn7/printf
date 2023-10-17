@@ -13,9 +13,9 @@ int pr_int(va_list a, flags_t *p)
 	int result = _length(j);
 
 	if (p->space == 1 && p->plus == 0 && j >= 0)
-		result += _write(' ');
+		result += _prnt_char(' ');
 	if (p->plus == 1 && j >= 0)
-		result += _write('+');
+		result += _prnt_char('+');
 	if (j <= 0)
 		result++;
 	pr_num(j);
@@ -34,7 +34,7 @@ void pr_num(int n)
 
 	if (n < 0)
 	{
-		_write('-');
+		_prnt_char('-');
 		x = -n;
 	}
 	else
@@ -42,7 +42,7 @@ void pr_num(int n)
 
 	if (x / 10)
 		pr_num(x / 10);
-	_write((x % 10) + '0');
+	_prnt_char((x % 10) + '0');
 }
 
 /**

@@ -20,7 +20,7 @@ int pr_str_rev(va_list a, flags_t *f)
 	while (s[i])
 		i++;
 	for (j = i - 1; j >= 0; j--)
-		_write(s[j]);
+		_prnt_char(s[j]);
 	return (i);
 }
 
@@ -43,13 +43,13 @@ int pr_rot13(va_list a, flags_t *f)
 	for (j = 0; s[j]; j++)
 	{
 		if (s[j] < 'A' || (s[j] > 'Z' && s[j] < 'a') || s[j] > 'z')
-			_write(s[j]);
+			_prnt_char(s[j]);
 		else
 		{
 			for (i = 0; i <= 52; i++)
 			{
 				if (s[j] == rot13[i])
-					_write(ROT13[i]);
+					_prnt_char(ROT13[i]);
 			}
 		}
 	}
