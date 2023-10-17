@@ -45,7 +45,7 @@ int pr_int(va_list a, flags_t *f);
 void pr_num(int n);
 int _length(int i);
 int prnt_unsigned(va_list a, flags_t *f);
-int prnt_binary(va_list a, flags_t *f);
+int prnt_int_binary(va_list a, flags_t *f);
 int prnt_octal(va_list a, flags_t *f);
 int prnt_hex(va_list a, flags_t *f);
 int prnt_hex_big(va_list a, flags_t *f);

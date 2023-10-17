@@ -18,7 +18,7 @@ int (*_pr_spf(char sp))(va_list, flags_t *)
 		{'u', prnt_unsigned},
 		{'x', prnt_hex},
 		{'X', prnt_hex_big},
-		{'b', prnt_binary},
+		{'b', prnt_int_binary},
 		{'o', prnt_octal},
 		{'R', pr_rot13},
 		{'r', pr_rev},
