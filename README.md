@@ -1,5 +1,4 @@
 Group project to create a printf function
-It is a very important and versatile function in the C programming language and being about to create our custom version of it will go a long way to enhance our understanding of the language.
 
 printf project includes these basic concepts:
 The format string.
