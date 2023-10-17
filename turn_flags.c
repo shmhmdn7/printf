@@ -1,38 +1,39 @@
 #include "main.h"
 
 /**
- * p_flag - turns on flag
- * @sp: character
- * @f: pointer
+ * t_flag - turns on flag
+ * @s: character
+ * @p: pointer
  * Return: 1
  */
 
-int p_flag(char sp, flags_t *f)
+int t_flag(char s, flags_t *p)
 {
 	int j = 0;
 
-	switch (sp)
+	switch (s)
 	{
 		case '+':
-			f->plus = 1;
+			p->plus = 1;
 			j = 1;
 			break;
 		case ' ':
-			f->space = 1;
+			p->space = 1;
 			j = 1;
 			break;
 		case '#':
-			f->hash = 1;
+			p->hash = 1;
 			j = 1;
 			break;
 		case '0':
-			f->zero = 1;
+			p->zero = 1;
 			j = 1;
 			break;
 		case '-':
-			f->minus = 1;
+			p->minus = 1;
 			j = 1;
 			break;
 	}
 	return (j);
 }
+
