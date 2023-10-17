@@ -21,7 +21,7 @@ int (*_pr_spf(char sp))(va_list, flags_t *)
 		{'b', prnt_int_binary},
 		{'o', prnt_octal},
 		{'R', pr_rot13},
-		{'r', pr_rev},
+		{'r', pr_str_rev},
 		{'S', pr_bigS},
 		{'p', pr_address}
 		};

@@ -3,18 +3,18 @@
 /**
  * pr_bigS - non printable characters
  * @a: arguments
- * @f: pointer
+ * @p: pointer
  * Return: number of characters printed
  */
 
-int pr_bigS(va_list a, flags_t *f)
+int pr_bigS(va_list a, flags_t *p)
 {
 	int j;
 	int leng;
 	char *result;
 	char *s = va_arg(a, char *);
 
-	(void)f;
+	(void)p;
 
 	if (!s)
 		return (_write_str("(null)"));
@@ -39,18 +39,18 @@ int pr_bigS(va_list a, flags_t *f)
 /**
  * pr_address - prints address
  * @a: arguments
- * @f: pointer
+ * @p: pointer
  * Return: number of characters printed
  */
 
-int pr_address(va_list a, flags_t *f)
+int pr_address(va_list a, flags_t *p)
 {
 	char *s;
 	unsigned int i = va_arg(a, unsigned long int);
 
 	register int leng = 0;
 
-	(void)f;
+	(void)p;
 
 	if (!i)
 		return (_write_str("(nil)"));
@@ -59,3 +59,4 @@ int pr_address(va_list a, flags_t *f)
 	leng += _write_str(s);
 	return (leng);
 }
+

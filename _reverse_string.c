@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
- * pr_rev - print string in reverse
+ * pr_str_rev - print string in reverse
  * @a: arguments
  * @f: pointer
  * Return: length
  */
 
-int pr_rev(va_list a, flags_t *f)
+int pr_str_rev(va_list a, flags_t *f)
 {
 	int i = 0;
 	int j;
@@ -55,3 +55,4 @@ int pr_rot13(va_list a, flags_t *f)
 	}
 	return (j);
 }
+
