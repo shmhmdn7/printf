@@ -40,7 +40,7 @@ int _write_str(char *s);
 int pr_string(va_list a, flags_t *f);
 int pr_char(va_list a, flags_t *f);
 int pr_percent(va_list a, flags_t *f);
-int p_flag(char sp, flags_t *f);
+int t_flag(char s, flags_t *p);
 int pr_int(va_list a, flags_t *f);
 void pr_num(int n);
 int _length(int i);
