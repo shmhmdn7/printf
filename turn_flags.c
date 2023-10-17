@@ -2,35 +2,35 @@
 
 /**
  * t_flag - turns on flag
- * @s: character
- * @p: pointer
+ * @sp: character
+ * @f: pointer
  * Return: 1
  */
 
-int t_flag(char s, flags_t *p)
+int t_flag(char sp, flags_t *f)
 {
 	int j = 0;
 
-	switch (s)
+	switch (sp)
 	{
 		case '+':
-			p->plus = 1;
+			f->plus = 1;
 			j = 1;
 			break;
 		case ' ':
-			p->space = 1;
+			f->space = 1;
 			j = 1;
 			break;
 		case '#':
-			p->hash = 1;
+			f->hash = 1;
 			j = 1;
 			break;
 		case '0':
-			p->zero = 1;
+			f->zero = 1;
 			j = 1;
 			break;
 		case '-':
-			p->minus = 1;
+			f->minus = 1;
 			j = 1;
 			break;
 	}
