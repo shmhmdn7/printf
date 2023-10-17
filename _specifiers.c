@@ -15,11 +15,11 @@ int (*_pr_spf(char sp))(va_list, flags_t *)
 		{'%', pr_percent},
 		{'d', pr_int},
 		{'i', pr_int},
-		{'u', pr_unsigned},
-		{'x', pr_hex},
-		{'X', pr_hex_big},
-		{'b', pr_binary},
-		{'o', pr_octal},
+		{'u', prnt_unsigned},
+		{'x', prnt_hex},
+		{'X', prnt_hex_big},
+		{'b', prnt_binary},
+		{'o', prnt_octal},
 		{'R', pr_rot13},
 		{'r', pr_rev},
 		{'S', pr_bigS},
@@ -35,3 +35,4 @@ int (*_pr_spf(char sp))(va_list, flags_t *)
 			return (specifier_array[x].f);
 	return (NULL);
 }
+
