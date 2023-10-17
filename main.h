@@ -35,7 +35,7 @@ typedef struct ph
 
 int _printf(const char *format, ...);
 int (*_pr_spf(char sp))(va_list, flags_t *);
-int _write(char c);
+int _prnt_char(char c);
 int _write_str(char *s);
 int prnt_str(va_list a, flags_t *p);
 int prnt_char(va_list a, flags_t *p);

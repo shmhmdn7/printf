@@ -2,12 +2,12 @@
 #include <unistd.h>
 
 /**
- * _write - print char
+ * _prnt_char - print char
  * @c: char to print
  * Return: on success 1.
  */
 
-int _write(char c)
+int _prnt_char(char c)
 {
 	static int x;
 	static char buffer[1024];
@@ -38,7 +38,8 @@ int _write_str(char *s)
 	register int x;
 
 	for (x = 0; s[x] != '\0'; x++)
-		_write(s[x]);
+		_prnt_char(s[x]);
 
 	return (x);
 }
+
