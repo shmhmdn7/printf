@@ -20,9 +20,10 @@ char *convert(unsigned long int num, int b, int lc)
 	p = &buffer[49];
 	*p = '\0';
 	do {
-		*--p = x[n % b];
-		n /= b;
-	} while (n != 0);
+		*--p = x[num % b];
+		num /= b;
+	} while (num != 0);
 
 	return (p);
 }
+
